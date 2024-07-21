@@ -11,3 +11,12 @@ This is a mini mental health survey form designed to collect user responses on t
 1. Clone or download the repository.
 2. Open `index.html` in your web browser to view the form.
 3. Customize the form or styles as needed.
+
+## Installation
+
+No installation is required. Simply download or clone the repository and open `index.html` in your browser.
+
+## Acknowledgements
+
+- Inspired by mental health awareness initiatives.
+- Designed using modern CSS practices.
