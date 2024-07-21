@@ -1,0 +1,160 @@
+*{
+    text-align: center;
+    
+  }
+  h1,h2,h3{
+    color:#025738;
+  }
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  p{
+    color: black;
+  }
+  body {
+    width: 100%;a/* Reset some default styles */
+    body, html {
+        margin: 10px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    
+    /* Container styling */
+    header, form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+    }
+    
+    p#description {
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+    }
+    
+    div {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    textarea {
+        resize: vertical;
+        max-width: 600px;
+    }
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    
+    label.inline {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Responsive styling */
+    @media (max-width: 600px) {
+        header, form {
+            padding: 15px;
+        }
+    
+        h1 {
+            font-size: 24px;
+        }
+    
+        h2 {
+            font-size: 18px;
+        }
+    
+        p#description, p {
+            font-size: 14px;
+        }
+    }
+    
+    height: 100vh;
+    margin: 0;
+    background-color: #0e6745;
+    color: #9fd6bb;
+    font-family: Tahoma;
+    font-size: 16px;
+    
+  }
+  .submitbutton{
+    
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 3em;
+    background-color: #17ac71;
+    color: white;
+    padding: 0.75rem;border-radius: 2px;
+    text-align: center;
+  min-width: 300px;
+  }
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body>
+    <div class="container">
+  <header>
+  <h1 id ="title">Mini Mental Health Survey Form</h1>
+  <p id ="description">Please take a few minutes to complete this survey. Your responses will help us understand and support your mental well-being.</p>
+  </header>
+  <form id="survey-form">
+    <h2>General Information</h2>
+    <div>
+    <label id= "name-label" for = "name">Name: </label>
+    <input type="text" name="name" id="name" placeholder="Enter name" required ></input>
+    </div>
+    <div>
+    <label id="email-label" for= "email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="Enter email" required></input>
+    </div>
+    <div>
+    <label id= "number-label" for= "age">Age: </label>
+    <input type="number" name="age" id="number" placeholder="Enter age" min="15" max="100" required></input>
+    </div>
+    <div>
+        <p>Gender :</p>
+      <select id= "dropdown" required>
+      <option disabled selected value>Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="unknown">Prefer not to say</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="other">Other</option>
+      </select>
+      </div>
+      <h2>Current Mood and Emotions</h2>
+      <div>
+        <p>How have you been feeling in general over the past two weeks? (Check all that apply)</p>
+        <label><input name="feeling" value= "happy" type="checkbox" class="input-checkbox"></input> Happy</label>
+        <label><input name="feeling" value= "anxious" type="checkbox" class="input-checkbox"></input> Anxious </label>
+        <label><input name="feeling" value= "depressed" type="checkbox" class="input-checkbox"></input> Depressed </label>
+        <label><input name="feeling" value= "stressed" type="checkbox" class="input-checkbox"></input> Stressed </label>
+        <label><input name="feeling" value= "content" type="checkbox" class="input-checkbox"></input> Content </label>
+        <label><input name="feeling" value= "irritable" type="checkbox" class="input-checkbox"></input> Irritable </label>
+        <label><input name="feeling" value= "other" type= "checkbox" class="input-checkbox"></input> Other </label>
+      </div>
+      <h2>Sleep Patterns</h2>
+    <div>
+      <p>How many hours of sleep do you typically get each night?</p>
+      <label>
+      <input name= "hours" value= "4" type= "radio" checked></input> Less than 4 hours 
+      </label>
+      <label>
+      <input name= "hours" value= "6" type= "radio" class= "input-radio"></input> 4-6 hours
+      </label>
+      <label>
+      <input name= "hours" value= "8" type= "radio" class= "input-radio"></input> 6-8 hours
+      </label>
+      <label>
+      <input name= "hours" value= "more" type= "radio" class= "input-radio"></input> More than 8 hours
+      </label>
+      </div>
+      <div>
+        <p>How would you rate the quality of your sleep?</p>
+        <label>
+        <input name= "quality" value= "poor" type= "radio" class= "input-radio"></input> Poor 
+        </label>
+        <label>
+        <input name= "quality" value= "fair" type= "radio" class= "input-radio"></input> Fair
+        </label>
+        <label>
+        <input name= "quality" value= "good" type= "radio" class= "input-radio"></input> Good
+        </label>
+        <label>
+        <input name= "quality" value= "excellent" type= "radio" class= "input-radio"></input> Excellent
+        </label>
+        </div>
+        <h2>Daily Activities and Interests</h2>
+        <div>
+          <p>Have you been able to enjoy your usual activities and hobbies?</p>
+          <select id= "dropdown" required>
+          <option disabled selected value>Select option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="sometimes">Sometimes</option>
+          </select>
+        </div>
+        <div>
+            <p>Do you find it difficult to concentrate on tasks?</p>
+            <select id= "dropdown" required>
+            <option disabled selected value>Select option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="sometimes">Sometimes</option>
+            </select>
+          </div>
+          <h2>Support Systems</h2>
+        <div>
+          <p>Do you feel you have enough support from friends or family?</p>
+          <select id= "dropdown" required>
+          <option disabled selected value>Select option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="sometimes">Sometimes</option>
+          </select>
+        </div>
+        <div>
+            <p>How comfortable are you talking to someone about your mental health?</p>
+            <select id= "dropdown" required>
+            <option disabled selected value>Select option</option>
+            <option value="vc">Very Comfortable</option>
+            <option value="c">Comfortable</option>
+            <option value="n">Neutral</option>
+            <option value="u">Uncomfortable</option>
+            <option value="vu">Very Uncomfortable</option>
+            </select>
+          </div>
+          <h2>Professional Help</h2>
+          <div>
+            <p>Have you ever sought help from a mental health professional?</p>
+            <select id= "dropdown" required>
+            <option disabled selected value>Select option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+            </select>
+          </div>
+          <div>
+              <p>If yes, how satisfied were you with the help you received?</p>
+              <select id= "dropdown">
+              <option disabled selected value>Select option</option>
+              <option value="vs">Very satisfied</option>
+              <option value="s">Satisfied</option>
+              <option value="n">Neutral</option>
+              <option value="d">Dissatisfied</option>
+              <option value="vd">Very dissatisfied</option>
+              </select>
+            </div>
+    <h2>Comments</h2>
+      <div>
+        <p>Is there anything else you would like to share about your mental health or well-being?</p>
+          <textarea
+            id="comment"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your text here..."
+          ></textarea>
+        </div>
+    <h3>Thank you for completing this survey. Your responses are confidential and will help us provide better support and resources.</h3>
+        <div>
+          <button type = "submit" id ="submit" class= "submitbutton">SUBMIT</button>
+        </div>
+  </form>
+  </div>
+</body>
